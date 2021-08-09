@@ -5,7 +5,4 @@ import androidx.activity.result.contract.ActivityResultContract
 
 class SimpleImageLauncher(
     caller: ActivityResultCaller
-) : BaseActivityResultLauncher<String, Int>(caller, SimpleImageContract()) {
-
-
-}
+) : BaseActivityResultLauncher<String, Int>(caller, SimpleImageContract())
