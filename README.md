@@ -201,6 +201,27 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+## 预定义的**Contract**
+在**Activity Results Api**中也有一些预定义的**Contract**, 如拍摄照片，获取权限等<br>
+```
+StartActivityForResult()
+StartIntentSenderForResult()
+CaputreVideo()
+CreateDocument()
+GetContent()
+GetMultipleContents()
+OpenDocument()
+OpenDocumentTree()
+OpenMultipleDocuments()
+PickContract()
+RequestMultiplePermissions()
+RequestPermission()
+TakePicture()
+TakePicturePreview()
+```
+
+
+
 
 
 
