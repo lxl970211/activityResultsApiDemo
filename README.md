@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity{
     btn_get_simple_image.setOnClickListener {
         simpleImageLauncher.launch(
             "", 
-             ActivityOptionsCompat.makeCustomAnimation(
+            ActivityOptionsCompat.makeCustomAnimation(
             this,
             R.anim.anim_alpha_enter,
             R.anim.anim_alpha_exit))
@@ -157,7 +157,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 Activity Results Api还可以在单独的类中接收 **activity**返回的结果<br>
-**CompomentActivity**和**Fragment** 类通过实现**ActivityResultCaller**接口来允许调用**registerForActivityResult()** Api，但也可以直接使用 **ActivityResultRegistry** 在未实现 **ActivityResultCaller** 的单独类中接收 **activity** 结果。 
+**CompomentActivity**和**Fragment** 类通过实现**ActivityResultCaller**接口来允许调用**registerForActivityResult()** Api，但也可以直接使用 **ActivityResultRegistry** 在未实现 **ActivityResultCaller** 的单独类中接收 **activity** 结果。
 
 需要实现 **LifecycleObserver** ，用于协议的注册与启动：
 ```
@@ -206,7 +206,7 @@ class MainActivity : AppCompatActivity() {
 ```
 StartActivityForResult()
 StartIntentSenderForResult()
-CaputreVideo()
+CaptureVideo()
 CreateDocument()
 GetContent()
 GetMultipleContents()

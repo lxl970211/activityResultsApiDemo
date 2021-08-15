@@ -36,11 +36,14 @@ class MainActivity : AppCompatActivity() {
     lateinit var getSimpleImageLifecycleObserver: SimpleImageLifecycleObserver
 
 
-    private val requestPermissionLauner = registerForActivityResult(ActivityResultContracts.RequestPermission()){
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()){
         if (it) {
             Toast.makeText(this, "获取成功", Toast.LENGTH_LONG).show()
-
         }
+    }
+
+    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+
     }
 
 
@@ -78,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
         //获取权限
         btn_request_permission.setOnClickListener {
-            requestPermissionLauner.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            requestPermissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
 
         //拍摄照片返回bitmap
