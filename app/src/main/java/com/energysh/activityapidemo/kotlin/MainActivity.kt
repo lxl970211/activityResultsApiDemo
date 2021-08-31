@@ -11,7 +11,7 @@ import com.energysh.activityapidemo.kotlin.contracts.SimpleImageContract
 import com.energysh.activityapidemo.kotlin.contracts.SimpleImageLauncher
 import com.energysh.activityapidemo.kotlin.contracts.SimpleImageLifecycleObserver
 import com.energysh.activityapidemo.kotlin.ui.prevContract.PrevStartActivityForResultActivity
-import com.energysh.activityapidemo.kotlin.ui.prevContract.PrevTakePicturePreviewActivity
+import com.energysh.activityapidemo.kotlin.ui.prevContract.PrevTakePictureActivity
 import com.energysh.activityapidemo.kotlin.ui.prevContract.PrevCaptureVideoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -85,8 +85,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         //拍摄照片返回bitmap
-        btn_take_picture_preview.setOnClickListener {
-            startActivity(Intent(this, PrevTakePicturePreviewActivity::class.java))
+        btn_take_picture.setOnClickListener {
+            startActivity(Intent(this, PrevTakePictureActivity::class.java))
         }
 
         //拍摄视频

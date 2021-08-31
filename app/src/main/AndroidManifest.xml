@@ -15,7 +15,7 @@
             android:name=".kotlin.ui.prevContract.PrevCaptureVideoActivity"
             android:exported="true" />
         <activity
-            android:name=".kotlin.ui.prevContract.PrevTakePicturePreviewActivity"
+            android:name=".kotlin.ui.prevContract.PrevTakePictureActivity"
             android:exported="true" />
         <activity
             android:name=".kotlin.ui.prevContract.PrevStartActivityForResultActivity"
